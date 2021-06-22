@@ -19,6 +19,7 @@
 	background-image: url(bc.jpg);
 	background-position: center;
 	background-size: cover;
+	loading: lazy;
 }
 
 .row
@@ -265,8 +266,11 @@
 	.form
 	{
 	width:250px;
-	position: relative;
-	right: 20%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	margin-top: 20px;
 	padding: 20px;
 	background-color: #fff;
 	}
@@ -824,76 +828,41 @@
 .buy
 {
 	width: 100%;
-	min-height: 70vh;
+	height: 70vh;
 	background-image: url(img/beach.jpg);
 	background-position: center;
 	background-size: cover;
+	position: relative;
 	-webkit-clip-path: polygon(0 16%, 100% 0, 100% 87%, 0% 100%);
 	clip-path: polygon(0 16%, 100% 0, 100% 87%, 0% 100%);
 
 }
 
-@media(max-width:720px)
-	{
-		
-	.buy
-	{
-	width: 100%;
-	-webkit-clip-path: none;
-	clip-path: none;
-
-	}
-	
-		
-	.buy .details h3
-	{
-		font-size: 10px;
-		color: #fff;
-		line-height: 7.5;
-	}
-
-	.buy .details p
-	{
-		text-align: center;
-		font-size: 13px;
-		line-height: 2.5;
-	}	
-	
-	.buy .btn a
-	{
-	text-decoration: none;
-	color: #fff;
-	padding: 5px 10px;
-	cursor: pointer;
-	font-size: 12px;
-	}
-
-}
-
-.details
+.buy .details
 {
-	position: absolute;
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 10%;
-	line-height: 5
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+
 }
 
-.details h3
+
+.buy .details h3
 {
 	font-size: 30px;
 	color: #fff;
-	line-height: 2.5;
 }
 
-.details p
+.buy .details p
 {
-	font-size: 35px;
-	line-height: 1.5;
+	font-size: 25px;
 	color: #fff;
 	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 .btn a
@@ -903,7 +872,9 @@
 	padding: 10px 20px;
 	cursor: pointer;
 	font-size: 12px
+		
 }
+
 .btn_1
 {
 	background: #306dd4;
@@ -925,6 +896,46 @@
 	background: #74757b;
 }
 
+@media(max-width:720px)
+	{
+		
+.buy
+	{
+	width: 100%;	
+	-webkit-clip-path: none;
+	clip-path: none;
+	}
+	
+		
+.buy .details h3
+	{
+		font-size: 10px;
+		color: #fff;
+		position: relative;
+	}
+
+.buy .details p
+	{
+		text-align: center;
+		position: relative;
+		font-size: 13px;
+
+	}	
+	
+.buy .btn a
+	{
+	text-decoration: none;
+	position: relative;
+	color: #fff;
+	padding: 5px 10px;
+	cursor: pointer;
+	font-size: 12px;
+	
+	}
+
+}
+
+
 .agent
 {
 	width: 100%;
@@ -933,7 +944,7 @@
 .agent .profile
 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
@@ -975,7 +986,7 @@
 
 	.agent .profile_1
 	{
-	margin-left: 5%;
+	display: block;
 	}
 	
 }
@@ -995,14 +1006,20 @@
 
 }
 
+.about .content
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	
+}
+
 .about_box
 {
-	width: 100%;
-	position: relative;
-	padding-top: 8%;
+	padding-top: 70px;
 	display: flex;
 	justify-content: center;
-	overflow: hidden;
+	text-align: center;
 }
 
 .about_box p
@@ -1029,7 +1046,7 @@
 {
 	font-size: 20px;
 	color: #fff;
-	margin-bottom: 10px;
+	padding-bottom: 50px;
 }
 
 @media(max-width:720px)
@@ -1072,18 +1089,6 @@
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .News
 {
@@ -1159,7 +1164,7 @@
 {
 	.box_1
 	{
-	width: 300px;
+		width: 300px;
 	}
 	
 	.box_1 .info_box p
@@ -1267,11 +1272,25 @@
 	clip-path: polygon(0 7%, 100% 0, 100% 92%, 0% 100%);
 }
 
-.looking h3
+.looking .details
 {
-	font-size: 14px;
+	text-align: center;
+	padding: 30px 0px;;
+	
 }
 
+.looking h3
+{
+	font-size: 24px;
+	color: #fff;
+}
+
+.looking p
+{
+	font-size: 20px;
+	color: #fff;
+	margin: 20px 0px;
+}
 .looking .btn_1
 {
 	background: #303030;
