@@ -431,6 +431,7 @@
 {
 	width: 100%;
 	height: 100vh;
+	position: relative;
 	background-color: #eceaea;
 	text-align: center;
 	clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
@@ -599,6 +600,7 @@
 .check
 {
 	width: 100%;
+	position: relative;
 
 }
 
@@ -810,6 +812,7 @@
 {
 	width: 100%;
 	text-align: center;
+	position: relative;
 }
 
 @media(max-width:720px)
