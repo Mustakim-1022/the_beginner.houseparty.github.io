@@ -563,10 +563,8 @@
 {
 	background: #2f65c1!important;
 }
-
-@media(max-width:720px)
+@media(max-width:1024px)
 {
-	
 	.recent
 	{
 	width: 100%;
@@ -574,6 +572,17 @@
 	position: relative;
 	clip-path: none;
 	}
+	
+	.owl-dot
+	{
+	margin-bottom: 20px;
+	}
+	
+}
+
+
+@media(max-width:720px)
+{
 	
 	.recent .col
 	{
@@ -589,7 +598,6 @@
 	{
 	height: 12px;
 	width: 12px;
-	margin-bottom: 20px;
 	margin-top: 10px;
 	margin-left: 5px;
 	}	
@@ -740,17 +748,25 @@
 	margin-left: 20%;
 }
 
-@media(max-width:720px)
-	
+@media(max-width:1024px)
 {
-	
-	
 	.check
 	{
 	width: 100%;
 	height: 100%;
 	padding-top: 10px;
-	}
+	}	
+}
+
+@media(max-width:720px)
+	
+{
+	
+	.check
+	{
+	height: 100%;
+	}	
+
 	
 	.slid .box_img
 	{	
@@ -796,7 +812,7 @@
 	clip-path: polygon(0 9%, 100% 0, 100% 91%, 0% 100%);
 }
 
-@media(max-width:720px)
+@media(max-width:1024px)
 {
 	.properties
 	{
@@ -804,9 +820,8 @@
 	height: 100%;
 	-webkit-clip-path: none;
 	clip-path: none;
-	}
+	}	
 }
-
 
 .rent
 {
@@ -815,8 +830,8 @@
 	position: relative;
 }
 
-@media(max-width:720px)
-	{
+@media(max-width:1024px)
+{
 	
 	.rent
 	{
@@ -824,9 +839,9 @@
 	text-align: center;
 	padding-top: 10px;
 	}
+		
 	
-	}
-
+}
 
 .buy
 {
